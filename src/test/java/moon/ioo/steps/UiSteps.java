@@ -1,6 +1,7 @@
 package moon.ioo.steps;
 
 import org.junit.jupiter.api.DisplayName;
+import static io.qameta.allure.Allure.step;
 
 import static com.codeborne.selenide.Selenide.open;
 

@@ -1,43 +1,52 @@
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
+# Проект автотестов на [hh.ru](https://hh.ru/)
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+---
+## Реализованы проверки:
+- Проверка наличия корректного промо-текста на главной странице
+- Проверка наличия результатов поиска по профессии
+- Проверка наличия результатов расширенного поиска
+- Проверка перехода на страницу для работодателей при нажатии кнопки в панели навигации
+- Проверка перехода на страницу для работодателей при нажатии 'Я ищу сотрудника'
+
+---
+## Стек технологий:
+![](img/Intelij_IDEA.png "IntelliJ IDEA")
+![](img/Java.png "Java")
+![](img/Gradle.png "Gradle")
+![](img/JUnit5.png "JUnit5")
+![](img/Appium.png "Appium")
+![](img/Selenide.png "Selenide")
+![](img/Selenoid.png "Selenoid")
+![](img/Allure_Report.png "Allure")
+![](img/allureTestOps.png "AllureTestOps")
+![](img/Browserstack.png "Browserstack")
+![](img/Github.png "GitHub")
+![](img/Jenkins.png "Jenkins")
+![](img/Rest-Assured.png "Rest-Assured")
+![](img/AndroidStudio.png "Android Studio")
 
 
-# USAGE examples
+### Запуск проекта:
+- для запуска проектов локально необходимо в local.properies определить параметры конфигурации
+- для запуска проектов удаленно необходимо в remote.properies определить параметры конфигурации или передать значения:
 
-### For run remote tests need fill remote.properties or to pass value:
-
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
+  * browser (default chrome)
+  * browserVersion (default 89.0)
+  * browserSize (default 1920x1080)
+  * browserMobileView (mobile device name, for example iPhone X)
+  * remoteDriverUrl (url address from selenoid or grid)
+  * videoStorage (url address where you should get video)
+  * threads (number of threads)
 
 
-Run tests with filled remote.properties:
+Локально:
 ```bash
 gradle clean test
 ```
 
-Run tests with not filled remote.properties:
+Удаленно:
 ```bash
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
-
-Serve report:
-```bash
-allure serve build/allure-results
-```
-
-
-###### For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
 ```
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
