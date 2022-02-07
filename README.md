@@ -50,8 +50,10 @@ gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -D
 ```
 
 ### Видео о прохождении тестов
-<img src="https://i.ibb.co/Htsp501/176e95f870b0a79b.gif" alt="video test" border="0" />
+<img src="https://i.ibb.co/sKGJ8hk/176e95f870b0a79b.gif" alt="video test" border="0" />
 
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
+
+<a href="https://ibb.co/sKGJ8hk"><img src="https://i.ibb.co/sKGJ8hk/176e95f870b0a79b.gif" alt="176e95f870b0a79b" border="0"></a>
