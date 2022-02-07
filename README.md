@@ -49,5 +49,9 @@ gradle clean test
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
+### Видео о прохождении тестов
+<img src="https://ibb.co/sKGJ8hk" alt="video test" border="0" />
+
+
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
