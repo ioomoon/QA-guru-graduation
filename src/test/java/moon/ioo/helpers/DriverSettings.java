@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package moon.ioo.helpers;
 
-import cloud.autotests.config.Project;
+import moon.ioo.config.Project;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
