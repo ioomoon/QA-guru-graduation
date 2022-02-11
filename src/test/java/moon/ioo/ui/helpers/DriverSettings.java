@@ -1,6 +1,6 @@
-package moon.ioo.helpers;
+package moon.ioo.ui.helpers;
 
-import moon.ioo.config.Project;
+import moon.ioo.ui.config.Project;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;

@@ -1,18 +1,18 @@
-package moon.ioo.tests;
+package moon.ioo.ui.tests;
 
 import com.codeborne.selenide.WebDriverRunner;
-import moon.ioo.config.Project;
-import moon.ioo.helpers.AllureAttachments;
-import moon.ioo.helpers.DriverSettings;
-import moon.ioo.helpers.DriverUtils;
+import moon.ioo.ui.config.Project;
+import moon.ioo.ui.helpers.AllureAttachments;
+import moon.ioo.ui.helpers.DriverSettings;
+import moon.ioo.ui.helpers.DriverUtils;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
-import moon.ioo.pages.AdvancedSearchPage;
-import moon.ioo.pages.MainPage;
-import moon.ioo.pages.SearchPage;
-import moon.ioo.steps.UiSteps;
+import moon.ioo.ui.pages.AdvancedSearchPage;
+import moon.ioo.ui.pages.MainPage;
+import moon.ioo.ui.pages.SearchPage;
+import moon.ioo.ui.steps.UiSteps;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;

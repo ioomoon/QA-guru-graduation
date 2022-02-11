@@ -1,4 +1,4 @@
-package moon.ioo.helpers;
+package moon.ioo.ui.helpers;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 

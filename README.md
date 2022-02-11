@@ -2,11 +2,19 @@
 
 ---
 ## Реализованы проверки:
+Ui:
 - Проверка наличия корректного промо-текста на главной странице
 - Проверка наличия результатов поиска по профессии
 - Проверка наличия результатов расширенного поиска
 - Проверка перехода на страницу для работодателей при нажатии кнопки в панели навигации
 - Проверка перехода на страницу для работодателей при нажатии 'Я ищу сотрудника'
+
+API:
+- Проверка наличия результата поиска по работодателям на территории России
+- Проверка корректного поиска компании по id
+- Проверка на наличие открытых вакансий в HH.ru
+- Проверка доступных локалей для хоста hh.ru
+- Проверка доступных локалей для хоста hh.kz
 
 ---
 ## Стек технологий:
@@ -24,6 +32,7 @@
 ![](img/Jenkins.png "Jenkins")
 ![](img/Rest-Assured.png "Rest-Assured")
 ![](img/AndroidStudio.png "Android Studio")
+
 
 
 ### Запуск проекта:
@@ -49,11 +58,6 @@ gradle clean test
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
-### Видео о прохождении тестов
-<img src="https://i.ibb.co/sKGJ8hk/176e95f870b0a79b.gif" alt="video test" border="0" />
-
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
-
-<a href="https://ibb.co/sKGJ8hk"><img src="https://i.ibb.co/sKGJ8hk/176e95f870b0a79b.gif" alt="176e95f870b0a79b" border="0"></a>

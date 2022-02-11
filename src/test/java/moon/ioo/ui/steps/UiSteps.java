@@ -1,4 +1,4 @@
-package moon.ioo.steps;
+package moon.ioo.ui.steps;
 
 import org.junit.jupiter.api.DisplayName;
 import static io.qameta.allure.Allure.step;

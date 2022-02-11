@@ -1,4 +1,4 @@
-package moon.ioo.config;
+package moon.ioo.ui.config;
 
 import org.aeonbits.owner.Config;
 
