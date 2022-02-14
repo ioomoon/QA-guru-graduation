@@ -1,8 +1,9 @@
 # Проект автотестов на [hh.ru](https://hh.ru/)
 
-<img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/hh.jpg?raw=true" width="300">
+<img align="center" src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/hh.jpg?raw=true" width="300">
 ---
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Реализованы проверки:
+
 Ui:
 - Проверка наличия корректного промо-текста на главной странице
 - Проверка наличия результатов поиска по профессии
