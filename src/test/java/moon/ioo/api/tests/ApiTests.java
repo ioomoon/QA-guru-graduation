@@ -107,6 +107,14 @@ public class ApiTests {
         softly.assertAll();
     }
 
-
-
+    @Test
+    @DisplayName("Поиск работодателя 'QA-guru'")
+    void searchQAGuru(){
+        given()
+                .when()
+                .get("/employers?text=QA-guru")
+                .then()
+                .statusCode(200)
+                .body("found", is(greaterThan(0)));
+    }
 }

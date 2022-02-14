@@ -19,6 +19,7 @@ API:
 - Проверка на наличие открытых вакансий в HH.ru
 - Проверка доступных локалей для хоста hh.ru
 - Проверка доступных локалей для хоста hh.kz
+- Поиск работодателя 'QA-guru'
 
 ---
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon2.png?raw=true" width="25"> Стек технологий:
@@ -60,9 +61,10 @@ gradle clean test
 ```bash
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
+## 
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Telegram-уведомления о прохождении тестов
-![](img/Telegram_notification.png "Java")
+![](img/telegram_notification.png "Java")
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
