@@ -61,7 +61,10 @@ gradle clean test
 ```bash
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
-## 
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon6.png?raw=true" width="25"> Отчеты в Allure Report
+![](img/allure1.png "Java")
+![](img/allure2.png "Java")
+
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Telegram-уведомления о прохождении тестов
 ![](img/telegram_notification.png "Java")
