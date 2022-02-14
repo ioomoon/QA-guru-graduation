@@ -4,7 +4,7 @@
 
 ---
 
-## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Реализованы проверки:
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon5.png?raw=true" width="25"> Реализованы проверки:
 
 Ui:
 - Проверка наличия корректного промо-текста на главной странице
@@ -39,7 +39,7 @@ API:
 
 
 
-## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon2.png?raw=true" width="25"> Запуск проекта:
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon4.png?raw=true" width="25"> Запуск проекта:
 - для запуска проектов локально необходимо в local.properies определить параметры конфигурации
 - для запуска проектов удаленно необходимо в remote.properies определить параметры конфигурации или передать значения:
 
