@@ -1,5 +1,7 @@
 package moon.ioo.ui.tests;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class UiTests extends TestBase {
     @DisplayName("Проверка наличия корректного промо-текста на главной странице")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void promoHeaderTest() {
         uiSteps.openMainPage();
@@ -72,6 +75,7 @@ public class UiTests extends TestBase {
 
 
     @DisplayName("Проверка перехода на страницу для работодателей при нажатии 'Я ищу сотрудника'")
+    @Severity(SeverityLevel.CRITICAL)
     @Test
     void changeStatusToEmployerTest() {
         uiSteps.openMainPage();

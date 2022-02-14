@@ -1,5 +1,7 @@
 package moon.ioo.api.tests;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.RestAssured;
 import moon.ioo.api.tests.lombok.Employer;
 import moon.ioo.api.tests.lombok.Locale;
@@ -56,6 +58,7 @@ public class ApiTests {
 
     @Test
     @DisplayName("Проверка на наличие открытых вакансий в HH.ru")
+    @Severity(SeverityLevel.MINOR)
     void checkOpenVacancies(){
         Employer employer = given()
                 .when()
@@ -109,6 +112,7 @@ public class ApiTests {
 
     @Test
     @DisplayName("Поиск работодателя 'QA-guru'")
+    @Severity(SeverityLevel.MINOR)
     void searchQAGuru(){
         given()
                 .when()
