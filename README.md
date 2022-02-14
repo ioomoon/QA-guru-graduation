@@ -44,12 +44,11 @@ API:
 - для запуска проектов удаленно необходимо в remote.properies определить параметры конфигурации или передать значения:
 
   * browser (default chrome)
-  * browserVersion (default 89.0)
+  * browserVersion (default 91.0)
   * browserSize (default 1920x1080)
-  * browserMobileView (mobile device name, for example iPhone X)
   * remoteDriverUrl (url address from selenoid or grid)
-  * videoStorage (url address where you should get video)
-  * threads (number of threads)
+  * allure_notifications_version (default 2.2.3)
+  * comment (for Allure notifications)
 
 
 Локально:
@@ -62,6 +61,8 @@ gradle clean test
 gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
 ```
 
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Telegram-уведомления о прохождении тестов
+![](img/Telegram_notification.png "Java")
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
