@@ -21,7 +21,7 @@ API:
 - Проверка доступных локалей для хоста hh.kz
 
 ---
-## Стек технологий:
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon2.png?raw=true" width="25"> Стек технологий:
 ![](img/Intelij_IDEA.png "IntelliJ IDEA")
 ![](img/Java.png "Java")
 ![](img/Gradle.png "Gradle")
