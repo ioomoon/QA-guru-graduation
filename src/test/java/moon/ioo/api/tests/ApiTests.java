@@ -1,5 +1,7 @@
 package moon.ioo.api.tests;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.restassured.RestAssured;
@@ -19,13 +21,15 @@ public class ApiTests {
     private final int headHunterID = 1455;
 
     @BeforeAll
-    static void setUp(){
+    static void setUp() {
         RestAssured.baseURI = "https://api.hh.ru/";
     }
 
 
-    @Test
     @DisplayName("Проверка наличия результата поиска по работодателям на территории России")
+    @Owner("m.lavrushina")
+    @Feature("API")
+    @Test
     void getEmployersInRussia() {
         int areaRussia = 113;
         given()
@@ -36,9 +40,11 @@ public class ApiTests {
                 .body("found", is(greaterThan(0)));
     }
 
-    @Test
     @DisplayName("Проверка корректного поиска компании по id")
-    void searchEmployerByID(){
+    @Owner("m.lavrushina")
+    @Feature("API")
+    @Test
+    void searchEmployerByID() {
         String headHunterName = "HeadHunter";
         String headHunterUrl = "https://api.hh.ru/employers/1455";
         Employer employer = given()
@@ -56,10 +62,12 @@ public class ApiTests {
         softly.assertAll();
     }
 
-    @Test
     @DisplayName("Проверка на наличие открытых вакансий в HH.ru")
     @Severity(SeverityLevel.MINOR)
-    void checkOpenVacancies(){
+    @Owner("m.lavrushina")
+    @Feature("API")
+    @Test
+    void checkOpenVacancies() {
         Employer employer = given()
                 .when()
                 .get("employers/" + headHunterID)
@@ -70,9 +78,11 @@ public class ApiTests {
         assertThat(employer.getOpen_vacancies()).isGreaterThan(0);
     }
 
-    @Test
     @DisplayName("Проверка доступных локалей для хоста hh.ru")
-    void checkLocalesInRU(){
+    @Owner("m.lavrushina")
+    @Feature("API")
+    @Test
+    void checkLocalesInRU() {
         Locale[] locale = given()
                 .when()
                 .get("/locales?host=hh.ru")
@@ -90,9 +100,11 @@ public class ApiTests {
     }
 
 
-    @Test
     @DisplayName("Проверка доступных локалей для хоста hh.kz")
-    void checkLocalesInKZ(){
+    @Owner("m.lavrushina")
+    @Feature("API")
+    @Test
+    void checkLocalesInKZ() {
         Locale[] locale = given()
                 .when()
                 .get("/locales?host=hh.kz")
@@ -110,10 +122,12 @@ public class ApiTests {
         softly.assertAll();
     }
 
-    @Test
     @DisplayName("Поиск работодателя 'QA-guru'")
     @Severity(SeverityLevel.MINOR)
-    void searchQAGuru(){
+    @Owner("m.lavrushina")
+    @Feature("API")
+    @Test
+    void searchQAGuru() {
         given()
                 .when()
                 .get("/employers?text=QA-guru")

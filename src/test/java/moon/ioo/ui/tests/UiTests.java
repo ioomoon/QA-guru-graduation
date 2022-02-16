@@ -1,18 +1,20 @@
 package moon.ioo.ui.tests;
 
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
-import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class UiTests extends TestBase {
     @DisplayName("Проверка наличия корректного промо-текста на главной странице")
     @Severity(SeverityLevel.CRITICAL)
+    @Feature("HomePage")
+    @Owner("m.lavrushina")
     @Test
     void promoHeaderTest() {
         uiSteps.openMainPage();
@@ -23,6 +25,8 @@ public class UiTests extends TestBase {
     }
 
     @DisplayName("Проверка наличия результатов поиска по профессии: " + "'" + searchText + "'")
+    @Owner("m.lavrushina")
+    @Feature("HomePage")
     @Test
     void searchTest() {
         uiSteps.openMainPage();
@@ -38,6 +42,8 @@ public class UiTests extends TestBase {
 
     @DisplayName("Проверка наличия результатов расширенного поиска: " + "'" + searchText + "'"
             + " с уровнем дохода: " + compensationValue)
+    @Owner("m.lavrushina")
+    @Feature("HomePage")
     @Test
     void advancedSearchTest() {
         uiSteps.openMainPage();
@@ -61,6 +67,8 @@ public class UiTests extends TestBase {
 
 
     @DisplayName("Проверка перехода на страницу для работодателей при нажатии кнопки в панели навигации")
+    @Owner("m.lavrushina")
+    @Feature("HomePage")
     @Test
     void changeStatusToEmployerInHeaderTest() {
         uiSteps.openMainPage();
@@ -76,6 +84,8 @@ public class UiTests extends TestBase {
 
     @DisplayName("Проверка перехода на страницу для работодателей при нажатии 'Я ищу сотрудника'")
     @Severity(SeverityLevel.CRITICAL)
+    @Owner("m.lavrushina")
+    @Feature("HomePage")
     @Test
     void changeStatusToEmployerTest() {
         uiSteps.openMainPage();
