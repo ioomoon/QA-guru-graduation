@@ -42,25 +42,23 @@ API:
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon4.png?raw=true" width="25"> Запуск проекта:
 - для запуска проектов локально необходимо в local.properies определить параметры конфигурации
-- для запуска проектов удаленно необходимо в remote.properies определить параметры конфигурации или передать значения:
-
-  * browser (default chrome)
-  * browserVersion (default 91.0)
-  * browserSize (default 1920x1080)
-  * remoteDriverUrl (url address from selenoid or grid)
-  * allure_notifications_version (default 2.2.3)
-  * comment (for Allure notifications)
-
 
 Локально:
 ```bash
 gradle clean test
 ```
+- для удаленного запуска воспользуйтесь [Jenkins](https://jenkins.autotests.cloud/job/009-ioomoon-finalProject/):
+  
+> Вы можете запускать тесты, настроив следующие параметры:
+  >> * BROWSER (default chrome)
+  >> * BROWSER_VERSION (default 91.0)
+  >> * BROWSER_SIZE (default 1920x1080)
+  >> * REMOTE_DRIVER_URL (url address from selenoid or grid)
+  >> * ALLURE_NOTIFICATIONS_VERSION (default 2.2.3)
+  >> * COMMENT (для уведомлений в Телеграм)
+  >> * ENVIRONMENT (default TEST)
 
-Удаленно:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
+
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon6.png?raw=true" width="25"> Отчеты в Allure Report
 ![](img/allure1.png "allure")
 ![](img/allure2.png "allure")
