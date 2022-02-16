@@ -42,36 +42,40 @@ API:
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon4.png?raw=true" width="25"> Запуск проекта:
 - для запуска проектов локально необходимо в local.properies определить параметры конфигурации
-- для запуска проектов удаленно необходимо в remote.properies определить параметры конфигурации или передать значения:
-
-  * browser (default chrome)
-  * browserVersion (default 91.0)
-  * browserSize (default 1920x1080)
-  * remoteDriverUrl (url address from selenoid or grid)
-  * allure_notifications_version (default 2.2.3)
-  * comment (for Allure notifications)
-
 
 Локально:
 ```bash
 gradle clean test
 ```
+- для удаленного запуска воспользуйтесь [Jenkins](https://jenkins.autotests.cloud/job/009-ioomoon-finalProject/):
+  
+> Вы можете запускать тесты, настроив следующие параметры:
+  >> * BROWSER (default chrome)
+  >> * BROWSER_VERSION (default 91.0)
+  >> * BROWSER_SIZE (default 1920x1080)
+  >> * REMOTE_DRIVER_URL (url address from selenoid or grid)
+  >> * ALLURE_NOTIFICATIONS_VERSION (default 2.2.3)
+  >> * COMMENT (для уведомлений в Телеграм)
+  >> * ENVIRONMENT (default TEST)
 
-Удаленно:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
+
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon6.png?raw=true" width="25"> Отчеты в Allure Report
-![](img/allure1.png "Java")
-![](img/allure2.png "Java")
-![](img/severity.png "Java")
+![](img/allure1.png "allure")
+![](img/allure2.png "allure")
+![](img/severity.png "allure")
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon6.png?raw=true" width="25"> Интеграция тестов c тест-менеджмент системой Allure TestOps
+![](img/allure_testOps1.png "allure_testOps")
+![](img/allure_testOps2.png "allure_testOps")
 
 
+## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Интеграция тестов c таск-трекер системой Jira
+![](img/jira.png "jira")
 
 ## <img src="https://github.com/ioomoon/QA-guru-graduation/blob/master/img/icon1.png?raw=true" width="25"> Telegram-уведомления о прохождении тестов
-![](img/telegram_notification.png "Java")
+![](img/telegram_notification.png "telegram_notification")
+
+
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
