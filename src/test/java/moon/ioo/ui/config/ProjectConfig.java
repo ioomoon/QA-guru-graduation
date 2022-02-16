@@ -9,19 +9,19 @@ import org.aeonbits.owner.Config;
         "classpath:config/remote.properties"
 })
 public interface ProjectConfig extends Config {
-//    @DefaultValue("chrome")
-    @Key("browser")
+    @DefaultValue("chrome")
+//    @Key("browser")
     String browser();
-//    @DefaultValue("91.0")
-    @Key("browserVersion")
+    @DefaultValue("91.0")
+//    @Key("browserVersion")
     String browserVersion();
-//    @DefaultValue("1920x1080")
-    @Key("browserSize")
+    @DefaultValue("1920x1080")
+//    @Key("browserSize")
     String browserSize();
-    @Key("browserMobileView")
+//    @Key("browserMobileView")
     String browserMobileView();
-    @Key("remoteDriverUrl")
+//    @Key("remoteDriverUrl")
     String remoteDriverUrl();
-    @Key("videoStorage")
+//    @Key("videoStorage")
     String videoStorage();
 }
