@@ -97,4 +97,5 @@ public class UiTests extends TestBase {
             checkUrl(employerUrl);
         });
     }
+
 }
