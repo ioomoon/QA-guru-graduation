@@ -7,12 +7,9 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Employer {
-    @JsonProperty("name")
     private String name;
 
-    @JsonProperty("id")
     private Integer id;
 
-    @JsonProperty("open_vacancies")
     private Integer open_vacancies;
 }
